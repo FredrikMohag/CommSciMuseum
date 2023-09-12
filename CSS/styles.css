@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Helsinki;
+  src: url(/Helsinki.ttf) format("truetype");
+}
+@font-face {
+  font-family: HelveticaNowText;
+  src: url(/HelveticaNowText-Regular.otf) format("truetype");
+}
+
+h1,
+h2,
+a {
+  color: white;
+  font-family: Helsinki;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 80px;
+  display: flex;
+  margin-top: 100px;
+  margin-left: 275px;
+}
+.first-heading {
+  text-align: center;
+  position: relative;
+}
+
+.second-heading {
+  position: absolute;
+  top: 50%;
+  left: 150px;
+  margin-top: 1, 5em;
+}
+
+h3,
+p {
+  font-family: HelveticaNowText;
+  color: white;
+}
+
+body,
+body2 {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+body {
+  box-shadow: inset 33.33vw 0px 0px #0b91c4, inset 66.66vw 0px 0px #dc1e45,
+    inset 99.99vw 0px 0px #71c777;
+}
+
+body2 {
+  box-shadow: inset 33.33vw 0px 0px #ff2f67, inset 66.66vw 0px 0px #71c777,
+    inset 99.99vw 0px 0px #0b91c4;
+}
+
+.oval1,
+.oval2,
+.oval3,
+.oval4 {
+  background-color: transparent;
+  width: 300px;
+  height: 100px;
+  margin: 100px auto 0px;
+  border-radius: 50%;
+  color: white;
+  font-size: 20px;
+  border: 3px solid white;
+}
+.ovals {
+  position: relative;
+}
+.oval1,
+.oval2,
+.oval3,
+.oval4 {
+  text-align: center;
+  padding-top: 10px;
+}
+
+.oval1 {
+  margin-top: -150px;
+  margin-right: 190px;
+}
+.oval2 {
+  margin-top: 150px;
+  margin-left: 280px;
+}
+
+.oval3 {
+  margin-top: -120px;
+  margin-right: 300px;
+}
+.oval4 {
+  margin-top: 10px;
+}
+
+.rectangle {
+  margin-top: 120px;
+  width: 100%;
+  height: 150px;
+  font-size: 40px;
+  background: #71c777;
+}
+
+.long-content {
+  padding: 980px;
+}
