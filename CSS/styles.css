@@ -3,8 +3,8 @@
   src: url(/Helsinki.ttf) format("truetype");
 }
 @font-face {
-  font-family: HelveticaNowText;
-  src: url(/HelveticaNowText-Regular.otf) format("truetype");
+  font-family: Georama_Condensed-Regular;
+  src: url(/Georama_Condensed-Regular.ttf) format("truetype");
 }
 
 h1,
@@ -15,28 +15,10 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 80px;
-  display: flex;
-  margin-top: 100px;
-  margin-left: 275px;
-}
-.first-heading {
-  text-align: center;
-  position: relative;
-}
-
-.second-heading {
-  position: absolute;
-  top: 50%;
-  left: 150px;
-  margin-top: 1, 5em;
-}
-
 h3,
 p {
-  font-family: HelveticaNowText;
   color: white;
+  font-family: Georama_Condensed-Regular;
 }
 
 body,
@@ -58,6 +40,13 @@ body2 {
     inset 99.99vw 0px 0px #0b91c4;
 }
 
+.heading {
+  display: flex;
+  font-size: 63px;
+  flex-direction: column;
+  text-align: center;
+}
+
 .oval1,
 .oval2,
 .oval3,
@@ -70,43 +59,174 @@ body2 {
   color: white;
   font-size: 20px;
   border: 3px solid white;
-}
-.ovals {
-  position: relative;
-}
-.oval1,
-.oval2,
-.oval3,
-.oval4 {
+  display: flex;
+  justify-content: center;
   text-align: center;
   padding-top: 10px;
 }
 
-.oval1 {
-  margin-top: -150px;
-  margin-right: 190px;
-}
-.oval2 {
-  margin-top: 150px;
-  margin-left: 280px;
+.ovals {
+  display: flex;
+  justify-content: center;
+  margin-top: 0%;
+  width: 100%;
 }
 
-.oval3 {
-  margin-top: -120px;
-  margin-right: 300px;
-}
-.oval4 {
-  margin-top: 10px;
+.rectangle,
+.rectangle2,
+.rectangle3 {
+  display: flex;
+  font-size: 40px;
+  margin-top: 250px;
 }
 
 .rectangle {
-  margin-top: 120px;
-  width: 100%;
-  height: 150px;
-  font-size: 40px;
   background: #71c777;
+  padding-left: 30px;
 }
 
-.long-content {
-  padding: 980px;
+.rectangle2 {
+  background: #0b91c4;
+  padding: 30px;
+}
+
+.rectangle3 {
+  background: #ff2f67;
+}
+
+.move-right {
+  margin-left: auto;
+  padding-right: 30px;
+}
+
+.move-left {
+  margin-right: auto;
+  padding-right: 30px;
+}
+
+.about-text {
+  display: flex;
+  font-size: 28px;
+  padding: 30px;
+  padding-top: 170px;
+  text-align: justify;
+}
+
+.about-img,
+.about-img2,
+.robot-img,
+.cosmo-img,
+.eco-img {
+  display: flex;
+  width: 480px;
+  height: 341px;
+}
+
+.about-container,
+.exhi-container,
+.exhi-text {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.hello-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+
+.rob-text,
+.cosmo-text,
+.eco-text,
+.address,
+.hours,
+.cosmo-fun {
+  flex: 1;
+  font-size: 28px;
+  padding: 30px;
+  text-align: justify;
+}
+.hello-text {
+  font-size: 28px;
+  width: 400px;
+  margin-top: 100px;
+  text-align: justify;
+}
+
+.address,
+.hours {
+  text-align: center;
+}
+
+.symbols-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-top: 100px;
+}
+
+.symbol-img {
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+.cosmo-container {
+  display: flex;
+}
+.wrapper {
+  display: flex;
+  position: relative;
+  margin-top: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+.wrapper .input_field {
+  margin-bottom: 10px;
+}
+.wrapper .input_field input[type="text"],
+.wrapper textarea {
+  padding: 10px;
+}
+.wrapper textarea {
+  resize: none;
+  height: 80px;
+  width: 100%;
+}
+.wrapper .btn input[type="submit"] {
+  border: 0px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background: #71c777;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+#error_message {
+  margin-bottom: 20px;
+  background: #fe8b8e;
+  padding: 0px;
+  text-align: center;
+  font-size: 14px;
+  transition: all 0.5s ease;
 }

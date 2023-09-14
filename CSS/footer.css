@@ -1,92 +1,41 @@
-/*Footer*/
+.footer,
+.footer2 {
+  display: flex;
+  margin-top: 150px;
+  padding: 100px;
+  color: white;
+  bottom: 0;
+}
 
 .footer {
-  margin-top: 150px;
-  width: 100%;
-  padding: 100px;
   background: #71c777;
-  color: white;
-  display: flex;
-  bottom: 0;
 }
 
-.footer div {
-  text-align: center;
-}
-.col-2 {
-  flex-grow: 2;
-}
-.footer div h3 {
-  font-weight: 300;
-  margin-top: 30px;
-  letter-spacing: 1px;
-}
-.col-1 a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-}
-.col-3 {
-  margin-right: 150px;
-}
-form input {
-  width: 300px;
-  height: 45px;
-  border-radius: 4px;
-  text-align: center;
-  margin: 20px;
-  outline: none;
-  border: none;
-}
-form button {
-  background: transparent;
-  border: 2px solid #ffff;
-  color: white;
-  border-radius: 30px;
-  padding: 10px 30px;
-  font-size: 15px;
-  cursor: pointer;
-}
-.footer-icons {
-  margin-top: 30px;
-}
-.footer-icons img {
-  width: 30px;
-  height: 30px;
-  margin: 10px;
-  cursor: pointer;
-}
 .footer2 {
-  margin-top: 150px;
-  width: 100%;
-  padding: 100px;
   background: #dc1e45;
-  color: white;
-  display: flex;
-  bottom: 0;
 }
 
+.footer div,
 .footer2 div {
   text-align: center;
 }
+
 .col-2 {
   flex-grow: 2;
+  padding-left: 110px;
 }
-.footer2 div h3 {
-  font-weight: 300;
-  margin-top: 30px;
-  letter-spacing: 1px;
+.col-3 {
+  padding-right: 10px;
 }
-.col-1 a {
+
+.col-1 {
+  padding-left: 70px;
   display: block;
   text-decoration: none;
   color: white;
   margin-left: 10px;
 }
-.col-3 {
-  margin-right: 150px;
-}
+
 form input {
   width: 300px;
   height: 45px;
@@ -96,6 +45,7 @@ form input {
   outline: none;
   border: none;
 }
+
 form button {
   background: transparent;
   border: 2px solid #ffff;
@@ -105,9 +55,11 @@ form button {
   font-size: 15px;
   cursor: pointer;
 }
+
 .footer-icons {
   margin-top: 30px;
 }
+
 .footer-icons img {
   width: 30px;
   height: 30px;
