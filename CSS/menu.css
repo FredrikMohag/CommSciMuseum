@@ -1,9 +1,3 @@
-/*Hamburger Menu*/
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
 :root {
   --bar-width: 60px;
   --bar-height: 8px;
@@ -15,6 +9,22 @@
   --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
+/* Common styles for ::before and ::after pseudo-elements and input */
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 9999px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing),
+    background-color var(--animation-timing);
+}
+
+/* Hamburger Menu */
 .hamburger-menu {
   --x-width: calc(var(--hamburger-height) * 1.41421356237);
 
@@ -39,20 +49,6 @@
 .hamburger-menu input:focus-visible {
   border: 1px solid var(--background);
   box-shadow: 0 0 0 1px var(--foreground);
-}
-
-.hamburger-menu::before,
-.hamburger-menu::after,
-.hamburger-menu input {
-  content: "";
-  width: var(--bar-width);
-  height: var(--bar-height);
-  background-color: var(--foreground);
-  border-radius: 9999px;
-  transform-origin: left center;
-  transition: opacity var(--animation-timing), width var(--animation-timing),
-    rotate var(--animation-timing), translate var(--animation-timing),
-    background-color var(--animation-timing);
 }
 
 .hamburger-menu input {
@@ -80,6 +76,7 @@
   width: 0;
 }
 
+/* Sidebar */
 .sidebar {
   transition: translate var(--animation-timing);
   translate: -100%;
@@ -95,12 +92,15 @@
 .hamburger-menu:has(input:checked) + .sidebar {
   translate: 0;
 }
+
+/* Menu Styles */
 .menu ul {
   font-size: 40px;
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .menu ul li a {
   color: white;
   text-decoration: none;

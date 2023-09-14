@@ -1,3 +1,4 @@
+/* Common styles for both .footer and .footer2 */
 .footer,
 .footer2 {
   display: flex;
@@ -7,35 +8,46 @@
   bottom: 0;
 }
 
+/* Styles specific to .footer */
 .footer {
   background: #71c777;
 }
 
+/* Styles specific to .footer2 */
 .footer2 {
   background: #dc1e45;
 }
 
+/* Common styles for .footer and .footer2 div elements */
 .footer div,
 .footer2 div {
   text-align: center;
+}
+
+/* Shared column styles */
+.col-1,
+.col-2,
+.col-3 {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+.col-1 {
+  padding-left: 70px;
+  margin-left: 10px;
 }
 
 .col-2 {
   flex-grow: 2;
   padding-left: 110px;
 }
+
 .col-3 {
   padding-right: 10px;
 }
 
-.col-1 {
-  padding-left: 70px;
-  display: block;
-  text-decoration: none;
-  color: white;
-  margin-left: 10px;
-}
-
+/* Shared form input styles */
 form input {
   width: 300px;
   height: 45px;
@@ -46,6 +58,7 @@ form input {
   border: none;
 }
 
+/* Shared form button styles */
 form button {
   background: transparent;
   border: 2px solid #ffff;
@@ -56,13 +69,15 @@ form button {
   cursor: pointer;
 }
 
-.footer-icons {
-  margin-top: 30px;
-}
-
+/* Shared footer icon styles */
 .footer-icons img {
   width: 30px;
   height: 30px;
   margin: 10px;
   cursor: pointer;
+}
+
+/* Margin for .footer-icons */
+.footer-icons {
+  margin-top: 30px;
 }
